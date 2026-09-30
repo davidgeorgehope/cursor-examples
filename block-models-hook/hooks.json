@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "hooks": {
+    "beforeSubmitPrompt": [
+      {
+        "command": "./hooks/block-models.sh",
+        "timeout": 5,
+        "failClosed": true
+      }
+    ],
+    "subagentStart": [
+      {
+        "command": "./hooks/block-models.sh",
+        "timeout": 5,
+        "failClosed": true
+      }
+    ]
+  }
+}
